@@ -12,7 +12,7 @@ BASE_FILES = {"gamestrings": "mods/heroesdata.stormmod/enus.stormdata/LocalizedD
               "talentdata": "mods/heroesdata.stormmod/base.stormdata/GameData/TalentData.xml",
               "patchdata": "mods/core.stormmod/base.stormdata/DataBuildId.txt"}
 HERO_NAMES_FILE = "heroesNames.txt"
-PATH = "/Users/crorella/Documents/heroesjson/out/"
+PATH = "out/"
 HERO_FILES_BASE_PATH = "mods/heroesdata.stormmod/base.stormdata/GameData/Heroes/"
 HERO_FILES_ALTERNATE_PATH = "mods/heromods/"
 STRING_FILES_ALTERNATE_PATH = "mods/heromods/"
