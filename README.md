@@ -51,6 +51,64 @@ create table talents
 This script assumes you have the files already extracted from the game files, I used [heroesjson](https://github.com/nydus/heroesjson).
 Once you have the files, change the path in [line 15](https://github.com/crorella/heroesinfo/blob/master/heroesinfo.py#L15) to the out folder created after you run heroesjson.
 
+> pypy heroesinfo.py
+```
+Processing patch: 57062
+Processing alarak
+Processing ThrallData
+Processing AnubarakData
+Processing WizardData
+Processing WitchDoctorData
+Processing UtherData
+Processing TinkerData
+Processing SylvanasData
+Processing StitchesData
+Processing RexxarData
+Processing NecromancerData
+Processing MurkyData
+Processing MonkData
+Processing MedicData
+Processing LostVikingsData
+Processing LeoricData
+Processing KaelthasData
+Processing JainaData
+Processing GennData
+Processing DryadData
+Processing DemonHunterData
+Processing CrusaderData
+Processing ChenData
+Processing ButcherData
+Processing AzmodanData
+Processing ArtanisData
+Processing TassadarData
+Processing DiabloData
+Processing ZeratulData
+Processing ZagaraData
+Processing SgtHammerData
+Processing thefirelords
+Processing zuljin
+Processing zarya
+Processing varian
+Processing valeera
+Processing tracer
+Processing samuro
+Processing probius
+Processing medivh
+Processing lucio
+Processing guldan
+Processing dva
+Processing dehaka
+Processing chromie
+Processing chogall
+Processing auriel
+Processing amazon
+Processing alarak
+Processing genji
+Processing malthael
+Processing kelthuzad
 
+Process finished with exit code 0
+```
 
-
+If everything goes well, you will see a similar output and if you query the tables you will see something like this:
+![talents](http://i.imgur.com/Xf6NJ0Cr.png) and this ![heroes](http://i.imgur.com/9MIO1zd.png)
