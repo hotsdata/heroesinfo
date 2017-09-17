@@ -12,7 +12,7 @@ BASE_FILES = {"gamestrings": "mods/heroesdata.stormmod/enus.stormdata/LocalizedD
               "talentdata": "mods/heroesdata.stormmod/base.stormdata/GameData/TalentData.xml",
               "patchdata": "mods/core.stormmod/base.stormdata/DataBuildId.txt"}
 HERO_NAMES_FILE = "heroesNames.txt"
-PATH = "out/"
+PATH = "/Users/crorella/Documents/heroesjson/out/"
 HERO_FILES_BASE_PATH = "mods/heroesdata.stormmod/base.stormdata/GameData/Heroes/"
 HERO_FILES_ALTERNATE_PATH = "mods/heromods/"
 STRING_FILES_ALTERNATE_PATH = "mods/heromods/"
@@ -289,6 +289,7 @@ def get_hero_data():
     get_talent_icons(hero_root)
 
     for hero in [h for h in ALTERNATE_HERO_SPECIFIC_FILES if h == 'alarak']:
+        print("Processing {0}".format(hero))
         # alarak.stormmod / base.stormdata / GameData / AlarakData.xml
         heroData = ET.parse(path.join(PATH, HERO_FILES_ALTERNATE_PATH, hero + ".stormmod", "base.stormdata/GameData/HeroData.xml"))
         hero_root = heroData.getroot()
@@ -302,6 +303,7 @@ def get_hero_data():
 
     # then get info for those heroes with a special heroData.xml file
     for hero in HERO_SPECIFIC_FILES:
+        print("Processing {0}".format(hero))
         heroData = ET.parse(path.join(PATH, HERO_FILES_BASE_PATH, hero, hero + ".xml"))
         hero_root = heroData.getroot()
         h = hero_root.find('CHero')
@@ -317,6 +319,7 @@ def get_hero_data():
 
     # Then, get info for heroes in the new heromod folder structure
     for hero in ALTERNATE_HERO_SPECIFIC_FILES:
+        print("Processing {0}".format(hero))
         # populate the talent names
         get_button_names_heroes(hero)
 
@@ -451,4 +454,4 @@ if __name__ == "__main__":
     get_talent_names()
     clean_unassigned_talents()
     #validate_talents()
-    save_to_db()
+    #save_to_db()
