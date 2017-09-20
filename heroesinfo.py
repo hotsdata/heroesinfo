@@ -72,7 +72,8 @@ ALTERNATE_HERO_SPECIFIC_FILES = [
      "alarak",
      "genji",
      "malthael",
-    "kelthuzad",
+     "kelthuzad",
+     "ana"
     ]
 
 
@@ -454,4 +455,4 @@ if __name__ == "__main__":
     get_talent_names()
     clean_unassigned_talents()
     #validate_talents()
-    #save_to_db()
+    save_to_db()
